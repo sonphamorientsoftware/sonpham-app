@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { LeftSideBarModel } from 'sonpham-lib/lib/models/leftSideBarModel/LeftSideBarModel';
+import { OsdLeftSideBarSPModel } from 'osd-core-ui-sp/osd-core-ui-sp/models/osd-left-side-bar-sp-model/OsdLeftSideBarSPModel';
 
 @Component({
   selector: 'app-left-side-bar',
@@ -8,7 +8,7 @@ import { LeftSideBarModel } from 'sonpham-lib/lib/models/leftSideBarModel/LeftSi
 })
 export class LeftSideBarComponent implements OnInit {
 
-  leftSideBars: LeftSideBarModel[] = [{
+  leftSideBars: OsdLeftSideBarSPModel[] = [{
     title : "Home",
     link : "/home",
     icon: "fas fa-home",

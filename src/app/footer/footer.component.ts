@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FooterModel } from 'sonpham-lib/lib/models/footerModel/FooterModel';
+import { OsdFooterSPModel } from 'osd-core-ui-sp/osd-core-ui-sp/models/osd-footer-sp-model/OsdFooterSPModel';
 
 @Component({
   selector: 'app-footer',
@@ -8,7 +8,7 @@ import { FooterModel } from 'sonpham-lib/lib/models/footerModel/FooterModel';
 })
 export class FooterComponent implements OnInit {
 
-  footer: FooterModel = {
+  footer: OsdFooterSPModel = {
     title: 'Son Pham Footer',
     link: '/sonpham-footer'
   }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItemModel } from 'sonpham-lib/lib/models/headerModel/MenuItemModel';
-import { LogoModel } from 'sonpham-lib/lib/models/headerModel/LogoModel';
+import { OsdMenuItemSPModel } from 'osd-core-ui-sp/osd-core-ui-sp/models/osd-header-sp-model/OsdMenuItemSPModel';
+import { OsdLogoSPModel } from 'osd-core-ui-sp/osd-core-ui-sp/models/osd-header-sp-model/OsdLogoSPModel';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +9,7 @@ import { LogoModel } from 'sonpham-lib/lib/models/headerModel/LogoModel';
 })
 export class HeaderComponent implements OnInit {
 
-  menuItems: MenuItemModel[] = [{
+  menuItems: OsdMenuItemSPModel[] = [{
     title : "Menu 1",
     link : "/menu1"
   },
@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit {
   }
   ];
 
-  logo: LogoModel = {
+  logo: OsdLogoSPModel = {
     link : "/",
     logoImage: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/8d2f6247619371.587fc4b8c063b.png",
     width: 20,
